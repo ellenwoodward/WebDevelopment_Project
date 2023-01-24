@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Create an account with ExtraBoard and become part of the family!">
+  <meta name="keywords" content="Register, Create Account, ExtraBoard, Ireland">
+  <meta name="author" content="E. Woodward">
+  <title>Register | ExtraBoard</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <!-- CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/82a6585fa9.js" crossorigin="anonymous"></script>
+  <link href="css/style.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- NAVIGATION -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container px-4 px-lg-5">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/updatedlogo.png" width="300" alt="logo image" class="d-inline-block align-middle mr-2">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+        <a class="nav-item nav-link" href="checkout.html">
+          <button type="button" class="btn btn-secondary ml-2">
+            Cart <span class="badge badge-light" id="total"></span>
+          </button>
+        </a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false"><i id="profileicon" class="fa-solid fa-user fa-lg"></i></a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">User Details</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#" id="login">Login</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+
+    <!-- FORM-->
+    <section class="bg-light">
+      <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+        <div class="container h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+              <div class="card" style="border-radius: 15px;">
+                <div class="card-body p-5">
+                  <h2 class="text-uppercase text-center mb-5">Create an account</h2>
+                  <form name="user-register" id="user-register" method="get">
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="firstname">First Name</label>
+                      <input type="text" id="firstname" name="firstname" class="form-control form-control-lg"
+                        required />
+                    </div>
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="lastname">Last Name</label>
+                      <input type="text" id="lastname" name="lastname" class="form-control form-control-lg" required />
+                    </div>
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="email">Email Address</label>
+                      <input type="email" id="email" name="email" class="form-control form-control-lg" required />
+                    </div>
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="password">Password</label>
+                      <input type="password" id="password" name="password" class="form-control form-control-lg"
+                        required />
+                    </div>
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="dob">Date of Birth</label>
+                      <input type="date" id="dob" name="dob" class="form-control form-control-lg" />
+                    </div>
+                    <br><br>
+                    <h4 class="text-uppercase text-center">Address</h4>
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="address1">Address Line 1</label>
+                      <input type="text" id="address1" name="address1" class="form-control form-control-lg" />
+                    </div>
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="address2">Address Line 2</label>
+                      <input type="text" id="address2" name="address2" class="form-control form-control-lg" />
+                    </div>
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="address3">Address Line 3</label>
+                      <input type="text" id="address3" name="address3" class="form-control form-control-lg" />
+                    </div>
+                    <div class="form-check d-flex justify-content-center mb-5">
+                      <input class="form-check-input me-2" type="checkbox" value="" id="terms" required />
+                      <label class="form-check-label" for="terms">
+                        I agree all statements in <a href="#!" class="text-body"><u>Terms of service</u></a>
+                      </label>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                      <button type="submit"
+                        class="btn btn-colour btn-block btn-lg gradient-custom-4 text-body">Register</button>
+                    </div>
+                    <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="login.html"
+                        class="fw-bold text-body"><u>Login here</u></a>
+                    </p>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+    </section>
+  </main>
+
+  <!-- FOOTER-->
+  <footer class="bg-dark text-center text-white">
+    <div class="container p-4 pb-0">
+      <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/" role="button"><i
+          class="fab fa-twitter"></i></a>
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.google.com/" role="button"><i
+          class="fab fa-google"></i></a>
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" role="button"><i
+          class="fab fa-instagram"></i></a>
+    </div>
+    <div class="text-center p-3">
+      Copyright &copy; ExtraBoard 2022
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script src="js/bootstrap.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

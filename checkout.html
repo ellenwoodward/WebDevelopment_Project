@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="View your ExtraBoeard cart, and add or remove items. Then proceed to purchase.">
+  <meta name="keywords" content="Games, ExtraBoard, Ireland, Cart, Checkout, Payment">
+  <meta name="author" content="E. Woodward">
+  <title>Cart | ExtraBoard</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <!-- CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/82a6585fa9.js" crossorigin="anonymous"></script>
+  <link href="css/style.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- NAVIGATION -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container px-4 px-lg-5">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/updatedlogo.png" width="300" alt="logo image" class="d-inline-block align-middle mr-2">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+        <a class="nav-item nav-link" href="checkout.html">
+          <button type="button" class="btn btn-secondary ml-2">
+            Cart <span class="badge badge-light" id="total"></span>
+          </button>
+        </a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false"><i id="profileicon" class="fa-solid fa-user fa-lg"></i></a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">User Details</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#" id="login">Login</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- HEADER-->
+  <header class="bg-dark py-5">
+    <div class="container px-4 px-lg-5 my-5">
+      <div class="text-center text-white">
+        <h1 class="display-4 fw-bolder">Cart</h1>
+        <p class="lead fw-normal text-white-50 mb-0">You've made good choices</p>
+      </div>
+    </div>
+  </header>
+  <!-- MAIN -->
+  <main>
+    <section class="h-100" style="background-color: #eee;">
+      <div class="container h-100 py-5">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-10" id="cartDiv">
+            <!-- render cart -->
+          </div>
+          <div id="cart-empty"></div>
+          <div class="card col-5 align-items-center">
+            <div class="card-body">
+              <p class="text-center" id="subtotal"></p>
+              <button type="button" id="go-to-pay" class="btn btn-warning btn-block btn-lg" href="#">Proceed to
+                Pay</button>
+              <button type="button" id="delete-cart" class="btn btn-warning btn-block btn-lg">Delete Cart</button>
+              <div id="message"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER-->
+  <footer class="bg-dark text-center text-white">
+    <div class="container p-4 pb-0">
+      <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/" role="button"><i
+          class="fab fa-twitter"></i></a>
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.google.com/" role="button"><i
+          class="fab fa-google"></i></a>
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" role="button"><i
+          class="fab fa-instagram"></i></a>
+    </div>
+    <div class="text-center p-3">
+      Copyright &copy; ExtraBoard 2022
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script src="js/bootstrap.js"></script>
+  <script src="js/main.min.js"></script>
+  <script src="json/products.js"></script>
+  <script src="js/checkout.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Please contact us at ExtraBoard if you have a query or just want to chat. No question is too small!">
+  <meta name="keywords" content="Contact Us, ExtraBoard, Ireland, Query, Message">
+  <meta name="author" content="E. Woodward">
+  <title>Contact Us | ExtraBoard</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <!-- CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/82a6585fa9.js" crossorigin="anonymous"></script>
+  <link href="css/style.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+  <!-- NAVIGATION -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container px-4 px-lg-5">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/updatedlogo.png" width="300" alt="logo image" class="d-inline-block align-middle mr-2">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact Us</a></li>
+        </ul>
+        <a class="nav-item nav-link" href="checkout.html">
+          <button type="button" class="btn btn-secondary ml-2">
+            Cart <span class="badge badge-light" id="total"></span>
+          </button>
+        </a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false"><i id="profileicon" class="fa-solid fa-user fa-lg"></i></a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">User Details</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#" id="login">Login</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <!-- FORM -->
+    <section>
+      <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+        <div class="container h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+              <div class="card" style="border-radius: 15px;">
+                <div class="card-body p-5">
+                  <h2 class="text-uppercase text-center">Contact Us</h2>
+                  <h6 class="text-center mb-5">We would love to hear from you!</h6>
+
+                  <form id="contact_form" name="contact_form" method="get">
+                    <div class="form-outline mb-4">
+                      <label for="name">Name</label>
+                      <input type="text" required maxlength="50" class="form-control" id="name" name="name">
+                    </div>
+                    <div class="form-outline mb-4">
+                      <label for="email_addr">Email address</label>
+                      <input type="email" required maxlength="50" class="form-control" id="email_addr" name="email"
+                        placeholder="name@example.com">
+                    </div>
+                    <div class="form-outline mb-4">
+                      <label for="message">Message</label>
+                      <textarea class="form-control" required id="message" name="message" rows="5"></textarea>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                      <button type="submit" class="btn btn-colour btn-block btn-lg text-body">Submit</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <!-- CONTACT DETAILS -->
+      <section>
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-md-3">
+            <div class="dbox w-100 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="fa fa-map-marker"></span>
+              </div>
+              <div class="text">
+                <p><span>Address:</span> 12 Finisklin Rd., Sligo, Ireland</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="dbox w-100 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="fa fa-phone"></span>
+              </div>
+              <div class="text">
+                <p><span>Phone/Mobile:</span> +353 87 111 1111</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="dbox w-100 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="fa fa-paper-plane"></span>
+              </div>
+              <div class="text">
+                <p><span>Email:</span> info@extraboard.ie</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+      <br>
+      <br>
+    </section>
+    <!-- MAP -->
+    <div class="align-items-center">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9318.121950183553!2d-8.497661595929813!3d54.27688301300317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485ee827dc70e3bd%3A0x1546c75d87c463d8!2sFinisklin%20Rd%2C%20Cartron%2C%20Sligo!5e0!3m2!1sen!2sie!4v1672442316227!5m2!1sen!2sie"
+        width="100%" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </main>
+
+  <!-- FOOTER-->
+  <footer class="bg-dark text-center text-white">
+    <div class="container p-4 pb-0">
+      <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/" role="button"><i
+          class="fab fa-twitter"></i></a>
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.google.com/" role="button"><i
+          class="fab fa-google"></i></a>
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" role="button"><i
+          class="fab fa-instagram"></i></a>
+    </div>
+    <div class="text-center p-3">
+      Copyright &copy; ExtraBoard 2022
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script src="js/bootstrap.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

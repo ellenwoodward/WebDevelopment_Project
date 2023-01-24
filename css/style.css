@@ -1,0 +1,97 @@
+#profileicon {
+  color: darkgray;
+}
+
+h6 {
+  color: #ff5d5c;
+}
+
+#login-btn {
+  color: #ff5d5c;
+}
+
+.dbox {
+  width: 100%;
+  margin-bottom: 25px;
+  padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .dbox {
+    margin-bottom: 0;
+    padding: 0;
+  }
+}
+.dbox p {
+  margin-bottom: 0;
+}
+
+.dbox p span {
+  font-weight: 500;
+  color: #000;
+}
+
+.dbox p a {
+  color: #2553b8;
+}
+
+.dbox .icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #ea1112;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.dbox .icon span {
+  font-size: 20px;
+  color: #fff;
+}
+
+.dbox .text {
+  width: 100%;
+}
+
+.btn-colour {
+  background-color: #ff5d5c;
+}
+
+.aboutus-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 20px;
+}
+
+.home-section {
+  border: 1px solid #ff5d5c;
+  margin-left: 50px;
+  margin-right: 50px;
+  display: block;
+  padding: 10px;
+}
+
+.aboutus-text {
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 20px;
+}
+
+.shop-img {
+  margin-top: 10px;
+}
+
+.carousel-margins {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.emptycart {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  padding: 20px;
+}/*# sourceMappingURL=style.css.map */

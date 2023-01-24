@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="ExtraBoard is the website for game-lovers who are 'extra bored'! We sell a variety of board and video games across Ireland.">
+  <meta name="keywords" content="Board games, Video games, ExtraBoard, Ireland">
+  <meta name="author" content="E. Woodward">
+  <title>Home | ExtraBoard</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <!-- CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/82a6585fa9.js" crossorigin="anonymous"></script>
+  <link href="css/style.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+  <!-- NAVIGATION -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container px-4 px-lg-5">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/updatedlogo.png" width="300" alt="logo image" class="d-inline-block align-middle mr-2">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+        <a class="nav-item nav-link" href="checkout.html">
+          <button type="button" class="btn btn-secondary ml-2">
+            Cart <span class="badge badge-light" id="total"></span>
+          </button>
+        </a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false"><i id="profileicon" class="fa-solid fa-user fa-lg"></i></a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" id="user-details-btn" href="userdetails.html">User Details</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#" id="login">Login</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br>
+  <main class="bg-light">
+    <!-- CAROUSEL -->
+    <div class="alert alert-danger fade show" role="alert" style="text-align: center;">
+      <i class="fa-truck fa-solid"></i><strong> Free Delivery</strong> on all orders over €30!
+    </div>
+    <div id="carousel" class="carousel carousel-dark slide carousel-margins" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="5000">
+          <img src="images/monopoly-slide.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="images/gaming-slide.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="images/chess-slide.jpeg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!-- PRODUCTS -->
+    <section>
+      <h1 class="text-center">Best-Sellers This Month</h1>
+      <div class="container px-4 px-lg-5 mt-5">
+        <div class="products row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+          <div class="col mb-5">
+            <div class="card h-100">
+              <img class="card-img-top shop-img" src="images/zelda.jpg" alt="zelda" />
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <h5 class="fw-bolder">Breath of the Wild</h5>
+                  &euro;59.99
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-5">
+            <div class="card h-100">
+              <img class="card-img-top shop-img" src="images/mariokart.jpg" alt="mario" />
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <h5 class="fw-bolder">Mario Kart 8</h5>
+                  &euro;54.99
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-5">
+            <div class="card h-100">
+              <img class="card-img-top shop-img" src="images/Stardew.jpg" alt="stardew" />
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <h5 class="fw-bolder">Stardew Valley</h5>
+                  &euro;14.99
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <a class="btn btn-outline-dark mt-auto btn-lg" href="shop.html">Go to Shop</a>
+      </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <!-- REVIEWS -->
+    <section>
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-10 col-xl-8 text-center">
+          <h3 class="mb-4">What Our Customers Think</h3>
+          <p class="mb-4 pb-2 mb-md-5 pb-md-0">
+            We value your thoughts! Leave us a review, tell us what you loved or didn't!
+          </p>
+        </div>
+      </div>
+
+      <div class="row text-center" style="padding:10px;">
+        <div class="col-md-4 mb-5 mb-md-0">
+          <h5 class="mb-3">Maria Lopez</h5>
+          <h6 class="mb-3">Chess Enthusiast</h6>
+          <p class="px-xl-3">
+            <i class="fas fa-quote-left pe-2"></i>ExtraBoard is a fantastic site,
+            that gamers in Ireland have been waiting a long time for. The prices are very reasonable,
+            delivery is speedy and the service is impeccable.
+          </p>
+          <ul class="list-unstyled d-flex justify-content-center mb-0">
+            <li><i class="fas fa-star fa-sm text-warning"></i></li>
+            <li><i class="fas fa-star fa-sm text-warning"></i></li>
+            <li><i class="fas fa-star fa-sm text-warning"></i></li>
+            <li><i class="fas fa-star fa-sm text-warning"></i></li>
+            <li><i class="fas fa-star-half-alt fa-sm text-warning"></i></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-5 mb-md-0">
+          <h5 class="mb-3">Lisa Curley</h5>
+          <h6 class="mb-3">Game Reviewer</h6>
+          <p class="px-xl-3">
+            <i class="fas fa-quote-left pe-2"></i>ExtraBoard is my go to place for board games and video games.
+            Excellent customer service.
+          </p>
+          <ul class="list-unstyled d-flex justify-content-center mb-0">
+            <li><i class="fas fa-star fa-sm text-warning"></i></li>
+            <li><i class="fas fa-star fa-sm text-warning"></i></li>
+            <li><i class="fas fa-star fa-sm text-warning"></i></li>
+            <li><i class="fas fa-star fa-sm text-warning"></i></li>
+            <li><i class="far fa-star fa-sm text-warning"></i></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-0">
+          <h5 class="mb-3">John Smith</h5>
+          <h6 class="mb-3">Mario Kart Champion</h6>
+          <p class="px-xl-3">
+            <i class="fas fa-quote-left pe-2"></i>A beautifully designed website! I never want to leave!
+          </p>
+          <ul class="list-unstyled d-flex justify-content-center mb-0">
+            <li><i class="fas fa-star fa-sm text-warning"></i></li>
+            <li><i class="fas fa-star fa-sm text-warning"></i></li>
+            <li><i class="fas fa-star fa-sm text-warning"></i></li>
+            <li><i class="fas fa-star fa-sm text-warning"></i></li>
+            <li><i class="fas fa-star fa-sm text-warning"></i></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <br>
+    <br>
+  </main>
+
+  <!-- Footer-->
+  <footer class="bg-dark text-center text-white">
+    <div class="container p-4 pb-0">
+      <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/" role="button"><i
+          class="fab fa-twitter"></i></a>
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.google.com/" role="button"><i
+          class="fab fa-google"></i></a>
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" role="button"><i
+          class="fab fa-instagram"></i></a>
+    </div>
+    <div class="text-center p-3">
+      Copyright &copy; ExtraBoard 2022
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script src="js/bootstrap.js"></script>
+  <script src="json/products.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
